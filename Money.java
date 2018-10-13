@@ -2,18 +2,19 @@
  * Class containing transactional information.
  */
 public class Money {
-    private String sender;
+    private String senderID;
     private double amount;
     private String currencyType;
+    private boolean transactionComplete = false;
     
-    public void Money(String sender, double amount, String currencyType) {
-        this.sender = sender;
+    public void Money(String senderID, double amount, String currencyType) {
+        this.senderID = senderID;
         this.amount = amount;
         this.currencyType = currencyType;
     }
     
-    public String getSender() {
-        return this.sender;
+    public String getsenderID() {
+        return this.senderID;
     }
     
     public double getAmount() {
@@ -24,12 +25,20 @@ public class Money {
         return this.currencyType;
     }
     
-    public void setSender(String newSender) {
-        this.sender = newSender;
+    public void setsenderID(String newsenderID) {
+        this.senderID = newsenderID;
         
     }
 
     public void setAmount(double newAmount) {
         this.amount = newAmount;
+    }
+
+    public void setTransactionComplete(boolean success) {
+        this.transactionComplete = success;
+    }
+
+    public boolean transactionSuccess() {
+        return this.transactionComplete;
     }
 }
