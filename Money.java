@@ -27,7 +27,6 @@ public class Money {
     
     public void setsenderID(String newsenderID) {
         this.senderID = newsenderID;
-        
     }
 
     public void setAmount(double newAmount) {
