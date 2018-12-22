@@ -1,3 +1,5 @@
+package com.example.sultansidhu.e_nfc_new;
+
 /**
  * Class containing transactional information.
  */
@@ -6,25 +8,25 @@ public class Money {
     private double amount;
     private String currencyType;
     private boolean transactionComplete = false;
-    
-    public void Money(String senderID, double amount, String currencyType) {
+
+    Money(String senderID, double amount, String currencyType) {
         this.senderID = senderID;
         this.amount = amount;
         this.currencyType = currencyType;
     }
-    
+
     public String getsenderID() {
         return this.senderID;
     }
-    
+
     public double getAmount() {
         return this.amount;
     }
-    
+
     public String currencyType() {
         return this.currencyType;
     }
-    
+
     public void setsenderID(String newsenderID) {
         this.senderID = newsenderID;
     }

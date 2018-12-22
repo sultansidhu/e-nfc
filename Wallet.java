@@ -1,8 +1,9 @@
+package com.example.sultansidhu.e_nfc_new;
+
 /*
 ==============================================================
 This class represents a Wallet, which contains Credit Cards
 ==============================================================
-
 */
 
 import java.util.ArrayList;
@@ -38,11 +39,11 @@ public class Wallet
         this.totalAmount = getTotalAmount();
     }
 
-     /*
-     Return the total amount in this wallet by considering the total amount in each
-     Credit Card in the list of credit cards
-     @return total the total amount in this wallet
-     */
+    /*
+    Return the total amount in this wallet by considering the total amount in each
+    Credit Card in the list of credit cards
+    @return total the total amount in this wallet
+    */
     public double getTotalAmount()
     {
         double total = 0;
